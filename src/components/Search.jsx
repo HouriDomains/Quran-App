@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Verse from "../quran.json";
-import "./styles.css";
+import "./components/styles.css";
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState("");
