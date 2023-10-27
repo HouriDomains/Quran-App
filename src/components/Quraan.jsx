@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Verse from "../quran.json";
+import "./components/styles.css";
 
 function Quran() {
   const [selectedSurah, setSelectedSurah] = useState("");
@@ -8,7 +9,7 @@ function Quran() {
 
   const handleSurahSelect = (e) => {
     setSelectedSurah(e.target.value);
-    setSelectedAyah(""); // Reset the selected Ayah when a new Surah is selected.
+    setSelectedAyah(""); 
   };
 
   const handleShowAllAyahs = () => {
